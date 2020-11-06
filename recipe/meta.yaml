@@ -1,6 +1,6 @@
 {% set name = "circuits" %}
-{% set version = "3.2" %}
-{% set sha256 = "b2fad9be2235f87480c194efc91eaeed3cb030c465d4697f1ca326ce3619bf9b" %}
+{% set version = "3.2.1" %}
+{% set sha256 = "faeefb79fa391f503aa8e161990a8f1ffa0d33b599dc46397b1ba4a09cfd9de5" %}
 
 package:
   name: {{ name|lower }}
@@ -12,16 +12,16 @@ source:
 
 build:
   noarch: python
-  number: 1
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
+    - python >=3.0
     - pip
     - setuptools_scm
   run:
-    - python
+    - python >=3.0
     - setuptools
 
 test:
@@ -33,7 +33,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'circuits is a Lightweight Event driven and Asynchronous Application Framework for the Python Programming Language with a strong Component Architecture'
+  summary: circuits is a Lightweight Event driven and Asynchronous Application Framework for the Python Programming Language with a strong Component Architecture
 
 extra:
   recipe-maintainers:
