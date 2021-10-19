@@ -1,6 +1,6 @@
 {% set name = "circuits" %}
-{% set version = "3.2.1" %}
-{% set sha256 = "faeefb79fa391f503aa8e161990a8f1ffa0d33b599dc46397b1ba4a09cfd9de5" %}
+{% set version = "3.2.2" %}
+{% set sha256 = "ce069ef42c02299a485e6871b19d7cddc9ed36f0e018869a09ad53b734d0044e" %}
 
 package:
   name: {{ name|lower }}
