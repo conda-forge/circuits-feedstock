@@ -1,13 +1,13 @@
 {% set name = "circuits" %}
-{% set version = "3.2.2" %}
-{% set sha256 = "ce069ef42c02299a485e6871b19d7cddc9ed36f0e018869a09ad53b734d0044e" %}
+{% set version = "3.2.5" %}
+{% set sha256 = "867cbfc692a1aa45cf0aada1487988411bffb0271601f57712e5cccf3caf6034" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
